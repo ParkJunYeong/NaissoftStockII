@@ -7,11 +7,24 @@
 
 #include "IScene.h"
 #include "CSceneManager.h"
+#include "CWindowManager.h"
 
-int main(void)
+#include <Windows.h>
+INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR CmdParam, int nCmd)
 {
 	CSceneManager *pSceneMgr = new CSceneManager();
+	CWindowManager *pWindowMgr = new CWindowManager();
+	
+	pWindowMgr->Create(hInst);
 
+	MSG msg;
+	while (GetMessage(&msg, 0, 0, 0))
+	{
+		TranslateMessage(&msg);
+		DispatchMessage(&msg);
+	}
+
+	delete pWindowMgr;
 	delete pSceneMgr;
 }
 

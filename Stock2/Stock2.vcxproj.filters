@@ -16,6 +16,9 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{d1b4c874-d465-4963-a89d-e66974d0635b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{7780596b-10e8-468f-ae78-f15c6fec2ed7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Arts.cpp">
@@ -39,6 +42,9 @@
     <ClCompile Include="CSceneManager.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
+    <ClCompile Include="CWindowManager.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arts.h">
@@ -61,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="CSceneManager.h">
       <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CWindowManager.h">
+      <Filter>GUI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

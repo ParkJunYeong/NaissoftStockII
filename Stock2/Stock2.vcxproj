@@ -14,6 +14,7 @@
     <ProjectGuid>{29F9D6D5-1FCE-47D2-AAE0-F52E05DC3A63}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Stock2</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -54,7 +55,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -69,7 +70,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
@@ -78,6 +79,7 @@
   <ItemGroup>
     <ClCompile Include="Arts.cpp" />
     <ClCompile Include="CSceneManager.cpp" />
+    <ClCompile Include="CWindowManager.cpp" />
     <ClCompile Include="GameFunctions.cpp" />
     <ClCompile Include="Lib.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -92,6 +94,7 @@
     <ClInclude Include="Lib.h" />
     <ClInclude Include="Stock.h" />
     <ClInclude Include="StockFunctions.h" />
+    <ClInclude Include="CWindowManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
