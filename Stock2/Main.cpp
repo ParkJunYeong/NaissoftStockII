@@ -5,6 +5,17 @@
 
 #include "GameFunctions.h"
 
+#include "IScene.h"
+#include "CSceneManager.h"
+
+int main(void)
+{
+	CSceneManager *pSceneMgr = new CSceneManager();
+
+	delete pSceneMgr;
+}
+
+/*
 int main(void)
 {
 	int menu, cnt, order;
@@ -188,4 +199,4 @@ int main(void)
 	getchar();
 	UnInitStock();
 	return 0;
-}
+} */ // Old Code
